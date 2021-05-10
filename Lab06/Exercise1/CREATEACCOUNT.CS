@@ -15,14 +15,15 @@ class CreateAccount
     static BankAccount NewBankAccount()
     {       
         BankAccount created = new BankAccount();
-        
-        Console.Write("Enter the account number   : ");
-        long number = long.Parse(Console.ReadLine());        
+
+        //Console.Write("Enter the account number   : ");
+        //long number = long.Parse(Console.ReadLine());
+        //long number = BankAccount.NextNumber();
 
         Console.Write("Enter the account balance! : ");
         decimal balance = decimal.Parse(Console.ReadLine());
 
-        created.Populate(number, balance);
+        created.Populate(balance);
 
         //created.accNo = number;
         //created.accBal = balance;
