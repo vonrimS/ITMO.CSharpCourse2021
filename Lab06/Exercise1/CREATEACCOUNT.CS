@@ -6,10 +6,17 @@ class CreateAccount
     static void Main() 
     {
         BankAccount berts = NewBankAccount();
+        TestDeposit(berts);
+        TestWithdraw(berts);
         Write(berts);
+       
         
         BankAccount freds = NewBankAccount();
+        TestDeposit(freds);
+        TestWithdraw(freds);
         Write(freds);
+
+
     }
     
     static BankAccount NewBankAccount()
@@ -37,5 +44,23 @@ class CreateAccount
         Console.WriteLine("Account number is {0}",  toWrite.Number());
         Console.WriteLine("Account balance is {0}", toWrite.Balance());
         Console.WriteLine("Account type is {0}", toWrite.Type());
+    }
+
+    public static void TestDeposit(BankAccount balanceToCheck)
+    {
+        Console.WriteLine("Please enter the sum to deposit to your bank account: ");
+        decimal amount = decimal.Parse(Console.ReadLine());
+        balanceToCheck.Deposit(amount);
+
+    }
+
+    public static void TestWithdraw(BankAccount acc)
+    {
+        Console.WriteLine("How much do you want to withdraw? ");
+        decimal amount = decimal.Parse(Console.ReadLine());
+        if (!acc.Withdraw(amount))
+        {
+            Console.WriteLine("insufficient funds");
+        }
     }
 }

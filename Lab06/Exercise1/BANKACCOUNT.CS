@@ -1,5 +1,5 @@
 
-
+using System;
 
 class BankAccount
 {
@@ -35,4 +35,27 @@ class BankAccount
     private decimal accBal;
     private AccountType accType;
 
+    public decimal Deposit( decimal deposit)
+    {
+        if (deposit > 0){
+            return accBal += deposit;
+        }
+        else
+        {
+            throw new ArithmeticException("Enter positive number only");
+            Console.WriteLine("Check your input, it has to be positive number...");
+        }
+               
+    }
+
+    public bool Withdraw(decimal amount)
+    {
+        bool enoughMoney = accBal >= amount;
+
+        if (enoughMoney)
+        {
+            accBal -= amount;
+        }
+        return enoughMoney;
+    }
 }
