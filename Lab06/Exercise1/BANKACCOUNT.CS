@@ -3,12 +3,17 @@
 
 class BankAccount
 {
-    public void Populate (long no, decimal bal) {
-        accNo = no;
-        accBal = bal;
+    public void Populate(long number, decimal balance) {
+        accNo = number;
+        accBal = balance;
         accType = AccountType.Checking;
     }
-    public long Number ()
+
+    private long accNo;
+    private decimal accBal;
+    private AccountType accType;
+
+    public long Number()
     {
         return accNo;
     }
@@ -23,7 +28,4 @@ class BankAccount
         return accType.ToString();
     }
 
-    private long accNo;
-    private decimal accBal;
-    private AccountType accType;
 }

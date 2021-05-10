@@ -21,11 +21,13 @@ class CreateAccount
 
         Console.Write("Enter the account balance! : ");
         decimal balance = decimal.Parse(Console.ReadLine());
-        
+
+        created.Populate(number, balance);
+
         //created.accNo = number;
         //created.accBal = balance;
         //created.accType = AccountType.Checking;
-        
+
         return created;
     }
     
