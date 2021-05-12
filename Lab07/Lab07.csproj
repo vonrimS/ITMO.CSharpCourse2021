@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Lab07.CopyFileUpper</StartupObject>
+    <StartupObject>Lab07.Exercise4.Test</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,6 +53,8 @@
     <Compile Include="Exercise2\Test.cs" />
     <Compile Include="Exercise2\Utils.cs" />
     <Compile Include="Exercise3\COPYFILEUPPER.CS" />
+    <Compile Include="Exercise4\Test.cs" />
+    <Compile Include="Exercise4\Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
