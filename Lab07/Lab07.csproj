@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Lab07.Exercise1.Test</StartupObject>
+    <StartupObject>Lab07.Test</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,8 @@
     <Compile Include="Exercise1\BANKACCOUNT.CS" />
     <Compile Include="Exercise1\CREATEACCOUNT.CS" />
     <Compile Include="Exercise1\Test.cs" />
+    <Compile Include="Exercise2\Test.cs" />
+    <Compile Include="Exercise2\Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
