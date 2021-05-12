@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Lab07.Test</StartupObject>
+    <StartupObject>Lab07.CopyFileUpper</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,10 +52,12 @@
     <Compile Include="Exercise1\Test.cs" />
     <Compile Include="Exercise2\Test.cs" />
     <Compile Include="Exercise2\Utils.cs" />
+    <Compile Include="Exercise3\COPYFILEUPPER.CS" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
