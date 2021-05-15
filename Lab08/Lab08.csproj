@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Lab08.Exercise2.CreateAccount</StartupObject>
+    <StartupObject>Lab08.Exercise3.CreateAccount</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,6 +53,10 @@
     <Compile Include="Exercise2\BANKACCOUNT.CS" />
     <Compile Include="Exercise2\BankTransaction.cs" />
     <Compile Include="Exercise2\CREATEACCOUNT.CS" />
+    <Compile Include="Exercise3\ACCOUNTTYPE.CS" />
+    <Compile Include="Exercise3\BANKACCOUNT.CS" />
+    <Compile Include="Exercise3\BankTransaction.cs" />
+    <Compile Include="Exercise3\CREATEACCOUNT.CS" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
