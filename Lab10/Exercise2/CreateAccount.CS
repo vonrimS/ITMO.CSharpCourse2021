@@ -1,18 +1,22 @@
 using System;
+using Banking;
 
-namespace Lab10.Exercise1
+
+namespace Lab10.Exercise2
 {
 	class CreateAccount
 	{
 		// Test Harness
 		static void Main()
 		{
+			new BankTransaction(0.0M);
 			Console.WriteLine("Sid's Account");
 			long bankAccNum = Bank.CreateAccount();
 			BankAccount sids = Bank.GetAccount(bankAccNum);
 			TestDeposit(sids);
 			TestWithdraw(sids);
 			Write(sids);
+
 			if (Bank.CloseAccount(bankAccNum))
 			{
 				Console.WriteLine("Account closed");

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CreateAccount</StartupObject>
+    <StartupObject>Lab10.Exercise2.CreateAccount</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,15 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercise1\AccountType.CS" />
-    <Compile Include="Exercise1\Bank.CS" />
-    <Compile Include="Exercise1\BankAccount.CS" />
-    <Compile Include="Exercise1\BankTransaction.CS" />
-    <Compile Include="Exercise1\CreateAccount.CS" />
+    <Compile Include="Banking\AccountType.CS" />
+    <Compile Include="Banking\Bank.CS" />
+    <Compile Include="Banking\BankAccount.CS" />
+    <Compile Include="Banking\BankTransaction.CS" />
+    <Compile Include="Exercise2\CreateAccount.CS" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

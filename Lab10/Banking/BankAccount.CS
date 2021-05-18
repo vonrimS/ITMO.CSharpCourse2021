@@ -2,7 +2,8 @@ using System;
 using System.IO;
 using System.Collections;
 
-namespace Lab10.Exercise1
+
+namespace Banking
 {
 	sealed public class BankAccount : IDisposable
 	{

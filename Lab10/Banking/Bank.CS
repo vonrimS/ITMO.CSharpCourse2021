@@ -1,7 +1,8 @@
 using System;
 using System.Collections;
 
-namespace Lab10.Exercise1
+
+namespace Banking
 {
     public class Bank
     {

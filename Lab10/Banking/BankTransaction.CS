@@ -1,6 +1,6 @@
+using System;
+using System.IO;
 
-    using System;
-    using System.IO;
 
 /// <summary>
 ///   A BankTransaction is created every time a deposit or withdrawal occurs on a BankAccount
@@ -8,10 +8,10 @@
 /// </summary>
 /// 
 
-
-namespace Lab10.Exercise1
+namespace Banking
 {
-	public class BankTransaction
+
+	internal class BankTransaction
 	{
 		private readonly decimal amount;
 		private readonly DateTime when;
@@ -32,4 +32,5 @@ namespace Lab10.Exercise1
 			return when;
 		}
 	}
+
 }
